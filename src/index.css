@@ -1,13 +1,643 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans');
+@import url('https://fonts.googleapis.com/css?family=Belgrano');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ 
+  background-color: black;
+
+  
+
+
+ 
+
+
+
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+li {
+  list-style: none;
+  }
+
+  *{
+padding:0;
+box-sizing: border-box;
+
+  }
+
+  html{
+
+    font-size: 62.5%;
+  
+  }
+
+
+
+
+
+
+ /* header css starts here */
+.App-header {
+  
+  display: flex;
+  padding: 0 10rem;
+
+
+}
+
+.App-header nav{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+
+}
+
+.App-header nav .left-side-menu{
+
+  display: flex;
+  flex-direction: row;
+  justify-content:baseline;
+  align-items: center;
+  width: 50%;
+
+  font-size: 2rem;
+
+}
+
+ .hamburgermenu{
+
+  display: none;
+
+}
+
+.left-side-menu ul{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: column;
+}
+
+.left-side-menu ul li{
+  padding: 10px;
+}
+.left-side-menu a{
+
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+
+}
+.App-header nav .right-side-menu {
+
+ 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+}
+
+.App-header nav .right-side-menu FontAwesomeIcon{
+
+height: 100vh;
+width: auto;
+}
+
+.App-header nav .right-side-menu{
+
+  color: white;
+
+}
+
+
+/* After header  */
+
+
+hr{
+
+  width: 96%;
+  height: none;
+
+
+}
+
+
+p{
+
+
+
+font-family: Belgrano;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+/* or 23px */
+
+
+color: #C4CACF;
+
+
+}
+
+h1{
+  width: wrap;
+  height: 1rem;
+  top: 585px;
+  
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.2rem;
+  color: #FFFFFF;
+
+}
+
+section{
+  
+  padding: 1.5rem 10rem;
+  display: flex;
+  
+  justify-content:space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 9rem;
+
+  
+
+  
+  
+
+}
+
+
+section .left-side-part img{
+
+  width: 45rem;
+  height: 60rem;
+  margin-top: 2.5rem;
+ 
+
+}
+
+
+
+section .right-side-part{
+
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 10rem;
+  width: 100%; 
+
+  margin-top: 0px;
+}
+/* 
+ratingbar css starts here */
+
+
+section .right-side-part .ratingpart {
+
+display:flex;
+justify-content:space-between;
+align-items: center;
+
+}
+
+section .right-side-part .ratingpart p{
+
+width: 21px;
+height: 16px;
+left: 119px;
+top: 770px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+padding-left: 5px;
+}
+
+section .right-side-part .ratingpart h4{
+
+width: 101px;
+height: 18px;
+left: 148px;
+top: 769px;
+
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+line-height: 175.7%;
+/* identical to box height, or 18px */
+
+text-align: center;
+
+color: #424648;
+
+}
+
+section .right-side-part .ratingpart .ratingBar{
+width: 85px;
+height: 25px;
+left: 39px;
+top: 768px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+background: #079741;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: 40px;
+}
+/* 
+pricing css part  */
+
+section .right-side-part .pricingPart{
+
+  display:flex;
+justify-content:space-between;
+align-items: center;
+
+
+}
+
+section .right-side-part .pricingPart h1:nth-child(2){
+
+
+width: 94px;
+height: 39px;
+left: 149px;
+top: 824px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+text-decoration-line: line-through;
+
+color: #3C464F;
+
+}
+
+section .right-side-part .pricingPart h1:nth-child(1){
+
+
+width: 85px;
+height: 39px;
+left: 39px;
+top: 824px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+  
+  }
+/*----------------------------Pricing box css start from here ------------------------- */
+
+  section .right-side-part .boxholder{
+
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+  }
+
+  
+
+  section .right-side-part .boxholder .pricingbox {
+
+width: 306px;
+height: 194px;
+left: 22px;
+top: 888px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: column;
+
+background: #21272C;
+border-radius: 8px;
+margin-right:20px;
+padding-left: 20px;
+padding-top: 15px;
+
+
+  }
+
+  section .right-side-part .boxholder .pricingbox:hover{
+    background: #374B5B;
+    border: 2px solid #FFFFFF;
+
+  }
+
+  
+
+  section .right-side-part .boxholder .pricingboxpart1 .mostpopular{
+  
+  
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6px;
+    line-height: 223.7%;
+    /* or 13px */
+    
+    background: #067BD8;
+    border-radius: 8px;
+    color: #FFFFFF;
+    padding: 2px 5px 1px 5px;
+    width:fit-content;
+    text-align: center;
+
+  }
+
+  section .right-side-part .boxholder .pricingboxpart1 h2{
+
+    
+    
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    /* identical to box height, or 22px */
+    
+    
+    color: #FFFFFF;
+
+  }
+
+  section .right-side-part .boxholder .pricingboxpart1 h3{
+ 
+    margin-top: 0px;
+font-family: Belgrano;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+
+/* or 23px */
+
+
+color: #465D68;
+  }
+
+  section .right-side-part .boxholder .pricingboxpart1 .paranbold{
+
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: center;
+     padding: 2px;
+  }
+
+  section .right-side-part .boxholder .pricingboxpart1 .paranbold p{
+    
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+
+    
+    
+    color: #24DB6D;
+
+  }
+
+ 
+
+  section .right-side-part .boxholder .pricingboxpart1 .paranbold b{
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 136.2%;
+    /* or 16px */
+    
+    
+    color: #DB9D24;
+
+
+  }
+
+  section .right-side-part .boxholder .pricingboxpart1 .pricingPart2{
+  
+    display: grid;
+    grid-template-columns: 0.31fr 0.31fr;
+    justify-content: flex-start;
+    align-items: center;
+  
+  }
+
+  section .right-side-part .boxholder .pricingboxpart1 .pricingPart2 h1:nth-child(2){
+
+
+    
+
+font-family: DM Serif Display;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+
+/* identical to box height, or 43px */
+
+
+text-decoration-line: line-through;
+
+color: #4C6070;
+    
+    }
+    
+    section .right-side-part .boxholder .pricingboxpart1 .pricingPart2 h1:nth-child(1){
+    
+    
+      
+      
+      font-family: DM Serif Display;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 19px;
+      /* identical to box height, or 43px */
+      
+    
+      
+      color: #FFFFFF;
+      
+      
+      }
+
+
+
+      section .right-side-part .boxholder .pricingboxpart2 {
+
+        padding-top: 30px;
+      }
+
+
+section .right-side-part button{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+width: 327px;
+height: 47px;
+left: 24px;
+top: 1150px;
+
+background: #13324A;
+box-shadow: 0px 1px 15px rgba(2, 2, 2, 0.04), inset 0px 0px 15px rgba(88, 88, 88, 0.3);
+}
+
+section .right-side-part button p{
+
+
+width: 101px;
+height: 16px;
+left: 149px;
+top: 1166px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.045em;
+
+color: #FFFFFF;
+
+}
+
+
+
+
+@media(max-width: 990px){
+
+  .hamburgermenu{
+
+    display: block;
+    font-size: 2.3rem;
+  
+  }
+  .left-side-menu ul{
+    display: none;
+  }
+ 
+
+  .ratingpart{
+    padding-right: 10px;
+  
+  }
+
+  section{
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80vw;
+    margin: auto 25px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  
+  section .left-side-part{
+    margin-left: 5rem;
+   
+    }
+    section .right-side-part{
+      margin-left: 5rem;
+    }
+    .pricingbox .pricingPart{
+     
+      justify-content: flex-end;
+
+      
+    }
+
+}
+
+@media(max-width: 1189px){
+  
+   
+   
+   
+   .right-side-part h1{
+    
+    width: auto;
+    height: 88px;
+    
+    
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 136.2%;
+    /* or 44px */
+    
+    
+    color: #FFFFFF;
+    
+   }
+
+   .pricingPart2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+   }
+  
+   .boxholder{
+     flex-wrap: wrap;
+     
+     
+
+   }
+  
+   .pricingbox{
+     margin-top: 10px;
+     
+   }
+}
+
+.pricingPart h1{
+  margin-right: 10px;
 }
